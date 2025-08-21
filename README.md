@@ -1,20 +1,20 @@
-# Keymap Editor Demo: Corne
+# Modified Void Ergo - "Choc" Handwired Hot-Swap Sockets Mod
 
-> [!Caution]
-> Don't bother with this repository, it will not work with an actual Corne keyboard.
+Build specs:
+* 44x Gateron KS-33 Low Profile 2.0 Mechanical Switches
+* 44x Gateron Low Profile Hot-Swap sockets
+* 2x Pro Micro NRF52840
+* 2x On/Off Push Button
+* 2x Li-Po Battery
+* 2x EC11 Rotary Encoders w/Caps
 
-This repository is no longer relevant. Originally it existed to provide a
-quick way to get your own repository up and running with Keymap Editor,
-using a popular keyboard.
+Keyboard specs:
+* 18 Keys per side for finger
+* 4 thumb keys
+* 2 rotary encoders
 
-The biggest hurdle for most people was having a layout definition, which
-I've started to auto-generate when possible and in some cases I've started
-to compile them in the [keymap-editor-contrib] repo. If you want to see
-what the Keymap Editor's layout metadata looks like, check that repo out.
-
-If you're looking for a starter for your ZMK keyboard code, look through
-ZMK's documentation [Installing ZMK](https://zmk.dev/docs/user-setup).
-
-[keymap-editor]:https://github.com/nickcoutsos/keymap-editor
-[keymap-editor-contrib]:https://github.com/nickcoutsos/keymap-editor-contrib
-[keymap-layout-tools]:https://nickcoutsos.github.io/keymap-layout-tools/
+Layout:
+* Layer 0: Colemak
+* Layer 1: (L) Common coding symbols (R) Num Pad
+* Layer 2: Function row, Number row and bluetooth connection (R) Direction pad
+* Layer 3: Number row symbols
