@@ -167,10 +167,10 @@
 
     base {
       bindings = <
-        &kp TAB    &kp Q        &kp W         &kp F         &kp P                                    &kp B        &kp J    &kp L          &kp U        &kp Y         &kp DOUBLE_QUOTES  &kp BACKSPACE
-        &kp LCTRL  &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LCMD T                              &kp G        &kp M    &hmr RCMD N    &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O       &kp APOS
-        &kp LSHFT  &kp Z        &kp X         &kp C         &kp D                                    &kp V        &kp K    &kp M          &kp COMMA    &kp DOT       &kp FSLH           &kp ESC
-                                &kp LEFT_ALT  &kp LGUI      &rgblayer 1 RGB_COLOR_HSB_VAL(80,70,50)  &kp SPACE    &kp RET  &kp BACKSPACE  &kp RALT     &RGUI
+        &kp TAB    &kp Q        &kp W         &kp F         &kp P        &kp B        &kp J    &kp L          &kp U        &kp Y         &kp DOUBLE_QUOTES  &kp BACKSPACE
+        &kp LCTRL  &hml LGUI A  &hml LALT R   &hml LCTRL S  &hml LCMD T  &kp G        &kp M    &hmr RCMD N    &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O       &kp APOS
+        &kp LSHFT  &kp Z        &kp X         &kp C         &kp D        &kp V        &kp K    &kp M          &kp COMMA    &kp DOT       &kp FSLH           &kp ESC
+                                &kp LEFT_ALT  &kp LGUI      &lt 1 SPACE  &kp SPACE    &kp RET  &kp BACKSPACE  &kp RALT     &RGUI
       >;
 
       sensor-bindings = <&rgbknob RGB_HUI RGB_HUD>, <&rgbknob RGB_BRI RGB_BRD>;
@@ -178,10 +178,10 @@
 
     raise {
       bindings = <
-        &trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans
+        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+        &bt BT_CLR    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7  &kp N8  &kp N9   &kp N0   &trans
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT    &trans        &trans  &trans  &trans   &trans   &trans
+                                    &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans
       >;
 
       sensor-bindings = <&volknob>;
@@ -189,19 +189,10 @@
 
     lower {
       bindings = <
-        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &trans
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-        &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans  &trans    &trans    &trans       &trans     &trans     &trans    &trans
-      >;
-    };
-
-    both {
-      bindings = <
-        &rgb_ug RGB_COLOR_HSB(0,80,60)  &rgb_ug RGB_COLOR_HSB(20,80,60)  &rgb_ug RGB_COLOR_HSB(40,80,60)  &rgb_ug RGB_COLOR_HSB(60,80,60)  &rgb_ug RGB_COLOR_HSB(80,80,60)  &rgb_ug RGB_COLOR_HSB(100,80,60)    &rgb_ug RGB_COLOR_HSB(120,80,60)  &rgb_ug RGB_COLOR_HSB(140,80,60)  &rgb_ug RGB_COLOR_HSB(160,80,60)  &rgb_ug RGB_COLOR_HSB(180,80,60)  &rgb_ug RGB_COLOR_HSB(200,80,60)  &rgb_ug RGB_COLOR_HSB(220,80,60)
-        &rgb_ug RGB_COLOR_HSB(0,60,40)  &rgb_ug RGB_COLOR_HSB(20,60,40)  &rgb_ug RGB_COLOR_HSB(40,60,40)  &rgb_ug RGB_COLOR_HSB(60,60,40)  &rgb_ug RGB_COLOR_HSB(80,60,40)  &rgb_ug RGB_COLOR_HSB(100,60,40)    &rgb_ug RGB_COLOR_HSB(120,60,40)  &rgb_ug RGB_COLOR_HSB(140,60,40)  &rgb_ug RGB_COLOR_HSB(160,60,40)  &rgb_ug RGB_COLOR_HSB(180,60,40)  &rgb_ug RGB_COLOR_HSB(200,60,40)  &rgb_ug RGB_COLOR_HSB(220,60,40)
-        &rgb_ug RGB_COLOR_HSB(0,80,30)  &rgb_ug RGB_COLOR_HSB(20,80,30)  &rgb_ug RGB_COLOR_HSB(40,80,30)  &rgb_ug RGB_COLOR_HSB(60,80,30)  &rgb_ug RGB_COLOR_HSB(80,80,30)  &rgb_ug RGB_COLOR_HSB(100,80,30)    &rgb_ug RGB_COLOR_HSB(120,80,30)  &rgb_ug RGB_COLOR_HSB(140,80,30)  &rgb_ug RGB_COLOR_HSB(160,80,30)  &rgb_ug RGB_COLOR_HSB(180,80,30)  &rgb_ug RGB_COLOR_HSB(200,80,30)  &rgb_ug RGB_COLOR_HSB(220,80,30)
-                                                                         &trans                           &trans                           &trans                           &trans                              &trans                            &trans                            &trans                            &trans
+        &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_DOT    &kp KP_PLUS      &kp KP_ASTERISK
+        &trans  &trans    &trans  &trans    &trans    &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_N0     &kp KP_SUBTRACT  &kp KP_DIVIDE
+        &trans  &trans    &trans  &trans    &trans    &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans           &trans
+                          &trans  &trans    &trans    &trans       &trans           &trans           &trans           &trans
       >;
     };
 
